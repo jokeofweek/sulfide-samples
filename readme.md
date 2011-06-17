@@ -1,6 +1,6 @@
 # Sulfide Example - Sulfide Group Wall
 
-> The Sulfide Group Wall is a basic example application using the Sulfide project,
+> The Sulfide Group Wall is a basic example application using the [Sulfide](https://github.com/jokeofweek/sulfide "Sulfide") project,
 which is located at jokeofweek/sulfide. It is a type of 'wall' or 'guestbook' where
 users can navigate to the page, read the posts and add a post.
 
@@ -12,4 +12,4 @@ users can navigate to the page, read the posts and add a post.
 5.  You've installed the application! Browse to localhost/ to view the application
 
 ## Notes
-* Sulfide version used: jokeofweek/sulfide@c913a21170ccab41c438fb9166026c0a4f7821fd
+* Sulfide version used: [commit c913a21170ccab41c438fb9166026c0a4f7821fd](https://github.com/jokeofweek/sulfide/commit/c913a21170ccab41c438fb9166026c0a4f7821fd "Sulfide Version")
