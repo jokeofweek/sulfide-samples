@@ -10,7 +10,7 @@ The Sulfide Group Wall is a basic example application using the [Sulfide](https:
 5.  You've installed the application! Browse to localhost/ to view the application
 
 ## Notes
-* Sulfide version used: [commit c913a21170ccab41c438fb9166026c0a4f7821fd](https://github.com/jokeofweek/sulfide/commit/c913a21170ccab41c438fb9166026c0a4f7821fd "Sulfide Version")
+* Sulfide version used: [commit 837095e7c9edbe461ede2a7c76ec0ff160acffe5](https://github.com/jokeofweek/sulfide/commit/837095e7c9edbe461ede2a7c76ec0ff160acffe5 "Sulfide Version")
 
 # Sulfide Plugin Example - Gravatar Plugin
 
@@ -50,4 +50,4 @@ To specify the format, add the format's code (for example, vCard's format code i
 	http://[path-to-application]/gravatar/profile/[email-address]/xml
 	
 ## Notes
-* Sulfide version used: [commit c913a21170ccab41c438fb9166026c0a4f7821fd](https://github.com/jokeofweek/sulfide/commit/c913a21170ccab41c438fb9166026c0a4f7821fd "Sulfide Version")
+* Sulfide version used: [commit 837095e7c9edbe461ede2a7c76ec0ff160acffe5](https://github.com/jokeofweek/sulfide/commit/837095e7c9edbe461ede2a7c76ec0ff160acffe5 "Sulfide Version")

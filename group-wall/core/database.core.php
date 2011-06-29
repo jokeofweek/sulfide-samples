@@ -31,7 +31,10 @@ class Database extends Observable {
 	 * @access protected
 	 */
 	protected static $drivers = array('mysql',
-									  'postgres',
+									  'pgsql',
+									  'mssql',
+									  'dblib',
+									  'sybase',
 									  'sqlite2',
 									  'sqlite3');				
 	
@@ -117,18 +120,17 @@ class Database extends Observable {
 			
 			switch ($driver) {
 				case 'mysql':
-					$this->db = new PDO('mysql:host='.$dbSettings['host'].';dbname='.$dbSettings['database_name'].'',
-									$dbSettings['username'],
-									$dbSettings['password']);
-					break;
-				case 'postgres':
-					$this->db = new PDO('pgsql:host='.$dbSettings['host'].';dbname='.$dbSettings['database_name'],
+				case 'pgsql':
+				case 'mssql':
+				case 'dblib':
+				case 'sybase':
+					$this->db = new PDO($driver.':host='.$dbSettings['host'].';dbname='.$dbSettings['database_name'].'',
 									$dbSettings['username'],
 									$dbSettings['password']);
 					break;
 				case 'sqlite2':
 				case 'sqlite3':
-					$this->db = new PDO(($driver == 'sqlite3') ? 'sqlite:' : 'sqlite2:' . $dbSettings['host'] . $dbSettings['database_name']);
+					$this->db = new PDO(($driver == 'sqlite3') ? 'sqlite:' : 'sqlite2:' . $dbSettings['database_name']);
 					break;
 			}
 			

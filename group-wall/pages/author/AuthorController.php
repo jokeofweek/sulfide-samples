@@ -22,7 +22,7 @@ class AuthorController extends Controller {
 		$results = Database::getFactory()->query('SELECT date, text FROM ~~~posts WHERE author = ? ORDER BY id DESC LIMIT ?', 
 												array (
 													$author, 
-													Config::get('posts', 'posts_per_page')
+													Config::get('application', 'posts', 'posts_per_page')
 												), 
 												FALSE, 
 												PDO::FETCH_ASSOC);

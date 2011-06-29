@@ -13,13 +13,13 @@ class PostsController extends Controller {
 		// Get the total number of posts
 		$results = Database::getFactory()->query('SELECT COUNT(*) FROM ~~~posts');
 		$total = $results[0][0];
-		if ($page < 1 || $page - 1 > $total / Config::get('posts', 'posts_per_page')) $page = 1;
+		if ($page < 1 || $page - 1 > $total / Config::get('application', 'posts', 'posts_per_page')) $page = 1;
 		
 		// Get the appropriate posts
 		$results = Database::getFactory()->query('SELECT * FROM ~~~posts ORDER BY id DESC LIMIT ?, ?', 
 												array (
-													($page-1) * Config::get('posts', 'posts_per_page'),
-													Config::get('posts', 'posts_per_page')
+													($page-1) * Config::get('application', 'posts', 'posts_per_page'),
+													Config::get('application', 'posts', 'posts_per_page')
 												));
 	
 		// Check if JSON was specified
@@ -50,7 +50,7 @@ class PostsController extends Controller {
 		
 		// Add the pagination
 		if ($page != 1) $template->assign('next', $page - 1);
-		if ($page < ($total / Config::get('posts', 'posts_per_page'))) $template->assign('previous', $page + 1);
+		if ($page < ($total / Config::get('application', 'posts', 'posts_per_page'))) $template->assign('previous', $page + 1);
 		$template->assign('controller', 'posts');
 		$template->assign('action', 'page');
 		$content.=$template->fetch('pagination.tpl');
