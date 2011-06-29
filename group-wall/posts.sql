@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `author` varchar(30) NOT NULL,
   `text` tinytext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf-8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `posts`

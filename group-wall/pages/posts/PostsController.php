@@ -78,7 +78,7 @@ class PostsController extends Controller {
 		}
 		
 		// Validate input length
-		if (strlen($_POST['text']) > Config::get('posts', 'max_post_length')) {
+		if (strlen($_POST['text']) > Config::get('application', 'posts', 'max_post_length')) {
 			$this->setParameter('error', 'Your post must be '.Config::get('posts', 'max_post_length').' characters or less.');
 			$this->dispatch('page');
 			die();
