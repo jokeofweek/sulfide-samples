@@ -35,4 +35,4 @@ Another important setting is the _removeGetFromMethodName_, which allows you to 
 	protected $removeGetFromMethodName = FALSE;
 
 ## Notes
-* Sulfide version used: [commit e4ede6d1a19c5c3786ff4ec71f56f6b4cc7ee205](https://github.com/jokeofweek/sulfide/commit/e4ede6d1a19c5c3786ff4ec71f56f6b4cc7ee205 "Sulfide Version")
+* Sulfide version used: [commit b2b574952e341190d60b077b9008877cf030ee55](https://github.com/jokeofweek/sulfide/commit/b2b574952e341190d60b077b9008877cf030ee55 "Sulfide Version")

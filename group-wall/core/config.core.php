@@ -20,10 +20,7 @@ class Config {
 			 */
 			'application' => array(
 				'name' => 'Sulfide Sample - Group Wall',
-				/*
-				 * Posts settings
-				 */
-				'posts'  => array(
+				'posts' => array(
 					'posts_per_page' => 10,
 					'max_post_length' => 255,
 				)

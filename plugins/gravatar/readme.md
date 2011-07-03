@@ -36,4 +36,4 @@ To specify the format, add the format's code (for example, vCard's format code i
 	http://[path-to-application]/gravatar/profile/[email-address]/xml
 	
 ## Notes
-* Sulfide version used: [commit 837095e7c9edbe461ede2a7c76ec0ff160acffe5](https://github.com/jokeofweek/sulfide/commit/837095e7c9edbe461ede2a7c76ec0ff160acffe5 "Sulfide Version")
+* Sulfide version used: [commit b2b574952e341190d60b077b9008877cf030ee55](https://github.com/jokeofweek/sulfide/commit/b2b574952e341190d60b077b9008877cf030ee55 "Sulfide Version")
