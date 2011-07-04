@@ -1,8 +1,8 @@
 <?php
 
 class ProfileController extends Controller {
-	protected $redirect_bad_actions = 'get';
-	protected $default_action = 'get';
+	protected $redirectBadActions = 'get';
+	protected $defaultAction = 'get';
 	
 	private static $formats = array('json', 'xml', 'qr', 'vcf');
 	private static $mimeTypes = array(

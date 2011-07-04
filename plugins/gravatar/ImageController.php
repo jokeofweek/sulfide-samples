@@ -1,8 +1,8 @@
 <?php
 
 class ImageController extends Controller {
-	protected $redirect_bad_actions = 'get';
-	protected $default_action = 'get';
+	protected $redirectBadActions = 'get';
+	protected $defaultAction = 'get';
 	
 	public function doGet() {
 		// Set the header

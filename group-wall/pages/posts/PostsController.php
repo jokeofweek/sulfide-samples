@@ -1,8 +1,8 @@
 <?php defined('APP_DIR') or die('Cannot access file.');	
 
 class PostsController extends Controller {
-	protected $redirect_bad_actions = 'page';
-	protected $default_action = 'page';
+	protected $redirectBadActions = 'page';
+	protected $defaultAction = 'page';
 	
 	public function doPage() {
 		// Get page

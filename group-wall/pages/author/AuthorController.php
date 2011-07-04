@@ -1,8 +1,8 @@
 <?php defined('APP_DIR') or die('Cannot access file.');	
 
 class AuthorController extends Controller {
-	protected $redirect_bad_actions = 'list';
-	protected $default_action = 'list';
+	protected $redirectBadActions = 'list';
+	protected $defaultAction = 'list';
 	
 	private function getAuthor() {
 		$author = $this->getParameter(0);

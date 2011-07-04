@@ -2,7 +2,7 @@
 
 // The REST plugin depends on the Routing core component, and therefore cannot
 // be included without it.
-if (depends('routing') == FALSE) {
+if (Core::depends('routing') == FALSE) {
 	throw new DependencyException('The REST plugin depends on the Routing plugin, and therefore could not be loaded.');
 }
 
@@ -58,7 +58,7 @@ class RESTController extends Controller {
 	 * @access protected
 	 * @type array
 	 */
-	protected $supportedMethods = array('DELETE', 'GET', 'POST', 'PUST');
+	protected $supportedMethods = array('DELETE', 'GET', 'POST', 'PUT');
 	
 	/**
 	 * Due to the predominant nature of GET requests, this setting allows
